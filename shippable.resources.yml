@@ -7,9 +7,9 @@ resources:
 # Docker Image for VISUALIZER
   - name: dv-img
     type: image
-    integration: dh-manishas
+    integration: DockerHubIntegration
     pointer:
-      sourceName: "shippableSamples/samplepipelinesdemo"
+      sourceName: "brookesnet/samplepipelinesdemo"
       isPull: false
     #make sure this seed version exists in your registry account
     seed:
@@ -35,9 +35,9 @@ resources:
 # add TEST env - AWS cluster
   - name: env-test-ecs
     type: cluster
-    integration: demo-manishas-ecs
+    integration: ECR
     pointer:
-      sourceName : "demo-shippable-ecs-test"
-      region: "us-east-1"
+      sourceName : "default"
+      region: "us-east-1a"
 
 #######1: EOF Create DV pipeline
