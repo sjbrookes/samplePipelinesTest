@@ -37,7 +37,7 @@ resources:
     type: cluster
     integration: DemoECSIntegration
     pointer:
-      sourceName : "630e13db-c88b-4d71-bc85-6f858c5466a9"
-      region: "us-east-1a"
+      sourceName : "default"
+      region: "us-east-1"
 
 #######1: EOF Create DV pipeline
